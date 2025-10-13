@@ -1,0 +1,343 @@
+/* ==========================
+   RESET E ESTILOS GLOBAIS
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+    background-color: #eaf6ea; /* tom verde clarinho */
+    color: #2e7d32; /* verde escuro para texto */
+}
+
+a {
+    text-decoration: none;
+    color: #2e7d32;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #145a32;
+}
+
+/* ==========================
+   HEADER E NAVEGAÇÃO
+=========================== */
+header {
+    background-color: #ffffff;
+    padding: 20px 10%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 3px solid #4CAF50;
+}
+
+header h1 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav li a:hover {
+    font-weight: bold;
+}
+
+/* ==========================
+   MAIN / SEÇÕES
+=========================== */
+main {
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 0.8s forwards;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ==========================
+   FORMULÁRIOS
+=========================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 2px solid #4CAF50;
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* ==========================
+   MENSAGENS DE CONFIRMAÇÃO
+=========================== */
+p.confirmacao {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ==========================
+   FOOTER
+=========================== */
+footer {
+    background-color: #ffffff;
+    padding: 20px 10%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #2e7d32;
+    border-top: 3px solid #4CAF50;
+    margin-top: 40px;
+}
+
+/* ==========================
+   ANIMAÇÃO DE APARECER
+=========================== */
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================
+   RESPONSIVIDADE
+=========================== */
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 20px 5%;
+    }
+}
+
+/* ==========================
+   GRÁFICOS
+=========================== */
+canvas {
+    width: 50%;        /* ocupa metade da largura da tela */
+    height: auto;      /* mantém a proporção automática */
+    max-width: 600px;  /* limita para telas muito grandes */
+    margin: 20px auto; /* centraliza o gráfico */
+    display: block;
+}
+#inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.imagem-inicio img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.texto-inicio {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  z-index: 2;
+}
+
+.texto-inicio h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.texto-inicio p {
+  font-size: 1.25rem;
+}
+#sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #e0f7fa;
+}
+
+.imagem-sobre img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-sobre {
+  margin-left: 20px;
+  max-width: 500px;
+}
+
+.texto-sobre h2 {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.texto-sobre p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #004d40;
+}
+#projetos {
+  padding: 40px;
+  background-color: #f1f8e9;
+  text-align: center;
+}
+
+#projetos h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.projetos-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projeto {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projeto h3 {
+  font-size: 1.1rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.projeto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.projeto img:hover {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+.projeto p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #33691e;
+  text-align: center;
+}
+#blog {
+  padding: 40px;
+  background-color: #f0f4c3;
+  text-align: center;
+}
+
+#blog h2 {
+  font-size: 2rem;
+  color: #558b2f;
+  margin-bottom: 30px;
+}
+
+.blog-galeria {
+  display: flex;
+  flex-wrap: wrap;       /* permite quebrar linha em telas menores */
+  justify-content: center; /* centraliza a galeria */
+  gap: 20px;             /* espaço entre os posts */
+}
+
+.post {
+  width: 300px;          /* aumenta o tamanho das imagens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post img {
+  width: 100%;           /* ocupa todo o espaço do post */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* efeito hover opcional */
+}
+
+.post img:hover {
+  transform: scale(1.05); /* aumenta 5% ao passar o mouse */
+  filter: brightness(0.9); /* escurece levemente */
+}
+
+.post h3 {
+  font-size: 1.2rem;
+  color: #33691e;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.post p {
+  font-size: 1rem;
+  color: #33691e;
+  text-align: center;
+}
