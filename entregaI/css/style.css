@@ -1,1 +1,88 @@
+/* Fonte e cores */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5; /* tom suave de verde */
+    color: #2f4f2f; /* verde escuro para textos */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 
+/* Cabeçalho */
+header {
+    background-color: #3a6b35; /* verde floresta */
+    color: white;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+main section {
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 900px;
+    background-color: #e6f2e6; /* fundo levemente verde */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Formulários */
+input, select, textarea, button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 5px 0 15px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #99cc99;
+}
+
+/* Botões */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2f4f2f;
+    color: white;
+}
