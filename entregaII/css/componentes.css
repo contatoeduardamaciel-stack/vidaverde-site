@@ -1,0 +1,129 @@
+/* ================================
+   COMPONENTES DE INTERFACE
+================================= */
+
+/* Botões */
+button:focus {
+  outline: 3px solid var(--cor-terciaria);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Cartões */
+.card {
+  background-color: var(--cor-clara);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: var(--esp-3);
+  margin-bottom: var(--esp-3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Emblemas e tags */
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-clara);
+  font-size: var(--tamanho-pequeno);
+  margin-right: var(--esp-1);
+}
+
+/* Alertas (feedback visual) */
+.alerta {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: var(--esp-2) var(--esp-3);
+  border-radius: 8px;
+  color: var(--cor-clara);
+  font-weight: bold;
+  z-index: 9999;
+  animation: aparecer 0.3s ease-in-out;
+}
+
+.alerta.sucesso {
+  background-color: var(--cor-sucesso);
+}
+
+.alerta.erro {
+  background-color: var(--cor-alerta);
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Menu interativo */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.nav-list.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: var(--cor-primaria);
+  padding: var(--esp-3);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+/* ====== TAGS / EMBLEMAS ====== */
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 4px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tag.verde {
+    background-color: #4CAF50;
+}
+
+.tag.azul {
+    background-color: #2196F3;
+}
+
+.tag.laranja {
+    background-color: #FF9800;
+}
+
+.tag.roxa {
+    background-color: #9C27B0;
+}
