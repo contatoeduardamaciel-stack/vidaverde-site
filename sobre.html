@@ -2,38 +2,45 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Sobre a Vida Verde</title>
-<link rel="stylesheet"
-href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/componentes.css">
+<link rel="stylesheet" href="css/responsivo.css">
 </head>
 <body>
    
-<header>
-    <h1>VidaVerde</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="voluntariado.html">Voluntariado</a></li>
-            <li><a href="doacoes.html">Doações</a></li>
-            <li><a href="contato.html">Fale conosco</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="transparencia.html">Transparência</a></li>
-        </ul>
-    </nav>
+    <header>
+  <h1>VidaVerde</h1>
+  <nav aria-label="menu principal">
+    <!-- Ícone do menu hambúrguer -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Lista de navegação -->
+    <ul class="nav-list">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="voluntariado.html">Voluntariado</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="contato.html">Fale conosco</a></li>
+      <li><a href="doacoes.html">Doações</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main>
-    <!-- Nossa história -->
+<main id="conteudo-principal">
     <section>
+        <h2>Sobre a ONG</h2>
+        <p>Somos uma organização dedicada à preservação ambiental e ao plantio de flores nativas. Nosso objetivo é promover a biodiversidade e envolver a comunidade em ações sustentáveis.</p>
         <h2>Nossa História</h2>
         <p>A VidaVerde nasceu em 2025 com o objetivo de proteger o meio ambiente, preservar florestas, conscientizar as pessoas sobre sustentabilidade e promover o plantio de árvores, flores, plantas frutíferas e hortas.</p>
     </section>
 
-    <!-- Missão, Visão e Valores -->
     <section>
         <h2>Missão, Visão e Valores</h2>
         <ul>
@@ -43,7 +50,6 @@ href="css/style.css">
         </ul>
     </section>
 
-    <!-- Equipe -->
     <section>
         <h2>Equipe</h2>
         <ul>
@@ -53,30 +59,18 @@ href="css/style.css">
             <li>Marcia Cristiane de Oliveira – Coordenadora de Projetos</li>
             <li>Sophia Cristine – Educação e engajamento</li>
             <li>Weslley Marques – Comunicação e Marketing</li>
-            
         </ul>
     </section>
 
-    <!-- Galeria de fotos (opcional) -->
     <section>
         <h2>Galeria de Fotos</h2>
-          </section>
-    <section id="sobre">
-  <div class="imagem-sobre">
-    <img src="https://portal.comunique-se.com.br/wp-content/uploads/2023/03/1d5626d9-d063-4ba1-b21f-db2619d3e31d.jpg" alt="Equipe de voluntários realizando plantio de flores">
-  </div>
-  <div class="texto-sobre">
-    <h2>Sobre a ONG</h2>
-    <p>Somos uma organização dedicada à preservação ambiental e ao plantio de flores nativas. Nosso objetivo é promover a biodiversidade e envolver a comunidade em ações sustentáveis.</p>
-  </div>
-</section>
-<section id="sobre">
-  <div class="imagem-sobre">
-    <img src="https://credcarbo.com/wp-content/uploads/X-iniciativas-locais-que-fazem-a-diferenca-na-preservacao-do-meio-ambiente.webp" alt="Iniciativas locais de preservação ambiental">
-  </div>
-      <p>Acreditamos que juntos podemos fazer a diferença para tornar o mundo melhor.</p>
-  </div>
-</section>
+        <div class="galeria">
+            <img src="images/horta2.jpeg" alt="Horta comunitária">
+            <img src="images/urbano1.jpeg" alt="Área urbana preservada">
+            <img src="https://credcarbo.com/wp-content/uploads/X-iniciativas-locais-que-fazem-a-diferenca-na-preservacao-do-meio-ambiente.webp" alt="Iniciativas locais de preservação ambiental">
+        </div>
+        <p>Acreditamos que juntos podemos fazer a diferença para tornar o mundo melhor.</p>
+    </section>
 </main>
 
 <footer>
@@ -84,5 +78,7 @@ href="css/style.css">
 </footer>
 
 <script src="js/scripts.js"></script>
+<script src="js/formularios.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

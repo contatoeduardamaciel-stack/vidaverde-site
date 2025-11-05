@@ -5,54 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos VidaVerde</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/responsivo.css">
 </head>
 <body>
 
 <header>
-    <h1>VidaVerde</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="voluntariado.html">Voluntariado</a></li>
-            <li><a href="doacoes.html">Doações</a></li>
-            <li><a href="contato.html">Fale conosco</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="transparencia.html">Transparência</a></li>
+  <h1>VidaVerde</h1>
+  <nav aria-label="menu principal">
+    <!-- Ícone do menu hambúrguer -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+<!-- Card de projeto -->
+<div class="card-projeto">
+    <h3>Projeto Reflorestar</h3>
+    <p>Iniciativa de plantio de árvores em áreas degradadas.</p>
+
+    <!-- Div das tags -->
+    <div class="tags">
+        <span class="tag verde">Meio Ambiente</span>
+        <span class="tag amarela">Reflorestamento</span>
+        <span class="tag azul">Educação</span>
+    </div>
+</div>
+<ul class="nav-list">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li class="submenu">
+        <a href="projetos.html">Projetos</a>
+        <ul class="dropdown">
+            <li><a href="projetos.html#reflorestamento">Reflorestamento</a></li>
+            <li><a href="projetos.html#educacao">Educação Ambiental</a></li>
+            <li><a href="projetos.html#reciclagem">Reciclagem</a></li>
         </ul>
+    </li>
+    <li><a href="voluntariado.html">Voluntariado</a></li>
+    <li><a href="cadastro.html">Cadastro</a></li>
+    <li><a href="contato.html">Fale conosco</a></li>
+    <li><a href="doacoes.html">Doações</a></li>
+</ul>
     </nav>
 </header>
 
-<main>
+<main id="conteudo-principal">
 <section id="projetos">
   <h2>Nossos Projetos</h2>
   <p>Conheça os projetos VidaVerde, que incentivam o plantio de árvores, flores e hortas, promovendo a conscientização ambiental e a participação da comunidade.</p>
   <div class="projetos-galeria">
     <div class="projeto">
-        <h3> Reflorestamento urbano</h3>
-      <img src="https://ogimg.infoglobo.com.br/in/24659346-3a3-dc8/FT1086A/REFLORESTAMENTO-URBANO-ZONA-SUL-RJ_03.jpg" alt="Reflorestamento urbano">
-      <p>Plantio de árvores em praças e áreas verdes da cidade, contribuindo para um ambiente mais saudável e agradável.</p>
+        <h3>Reflorestamento urbano</h3>
+        <img src="images/reflorestamento.jpg" alt="novas mudas de árvores plantadas nas áreas urbanas das cidades">
+        <p>Plantio de árvores em praças e áreas verdes da cidade, contribuindo para um ambiente mais saudável e agradável.</p>
     </div>
     <div class="projeto">
-        <h3> Horta comunitária</h3>
-      <img src="https://medeage.com.br/images/horta-comunitaria-e-exemplo-de-cooperacao.png" alt="Horta comunitária">
-      <p>Incentivo ao plantio de hortas em escolas e bairros, promovendo alimentação saudável e educação ambiental.</p>
-    </div>
-    <div class="projeto">
-        <h3> Regando Flores </h3>
-      <img src="https://mid-noticias.curitiba.pr.gov.br/2023/00401758.jpg" alt="Plantio de flores">
-      <p>Plantio e cuidado de flores em jardins publicos pelas cidades</p>
+        <h3>Horta comunitária</h3>
+        <img src="images/horta.png" alt="novas hortas comunitárias em bairros e escolas">
+        <p>Incentivo ao plantio de hortas em escolas e bairros, promovendo alimentação saudável e educação ambiental.</p>
     </div>
     <div class="projeto">
         <h3>Plantando flores</h3>
-      <img src="https://sindivarejistacampinas.org.br/wp-content/uploads/2016/05/vemregar2-420x280.jpg" alt="Cuidando flores em local público">
-      <p>Cuidando e plantando flores em local público</p>
+        <img src="images/flores.jpeg" alt="flores em todo lugar">
+        <p>Distribuindo e plantando mudas de flores em prol de um ambiente mais acolhedor, preservado e alegre para todos.</p>
     </div>
     <div class="projeto">
-        <h3>Novas árvores</h3>
-      <img src="https://www.fazverde.com.br/wp-content/uploads/2017/10/POST-2017-10-05.jpg" alt="Plantando árvores">
-      <p>Plantando árvores em área urbana e rural </p>
+        <h3>Preservação rural e urbana</h3>
+        <img src="images/urbano2.jpeg" alt="uma vida mais verde para todos">
+        <p>Acompanhamento do projeto de preservação das árvores em áreas rurais e urbanas.</p>
     </div>
   </div>
 </section>
@@ -61,5 +83,9 @@
 <footer>
     <p>© 2025 VidaVerde | Endereço: Rua das Árvores, 123 – Bairro Verde – Cidade/UF | contato@vidaverde.org | (00) 1234-5678</p>
 </footer>
+
+<script src="js/scripts.js"></script>
+<script src="js/formularios.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
