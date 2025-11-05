@@ -1,0 +1,166 @@
+/* ================================
+   SISTEMA DE DESIGN - VARIÁVEIS
+================================= */
+:root {
+  /* Paleta de cores */
+  --cor-primaria: #3a6b35;
+  --cor-secundaria: #4caf50;
+  --cor-terciaria: #81c784;
+  --cor-fundo: #f0f8f5;
+  --cor-clara: #ffffff;
+  --cor-escura: #2f4f2f;
+  --cor-neutra: #e6f2e6;
+  --cor-alerta: #b22222;
+  --cor-sucesso: #3a6b35;
+
+  /* Tipografia */
+  --fonte-principal: "Arial", sans-serif;
+  --tamanho-h1: 2rem;
+  --tamanho-h2: 1.5rem;
+  --tamanho-texto: 1rem;
+  --tamanho-pequeno: 0.875rem;
+
+  /* Espaçamento modular */
+  --esp-1: 8px;
+  --esp-2: 16px;
+  --esp-3: 24px;
+  --esp-4: 32px;
+  --esp-5: 48px;
+  --esp-6: 64px;
+}
+
+/* ================================
+   ESTILOS GERAIS
+================================= */
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-escura);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+main section {
+  padding: var(--esp-3);
+  margin: var(--esp-2) auto;
+  max-width: 900px;
+  background-color: var(--cor-neutra);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================
+   CABEÇALHO E NAVEGAÇÃO
+================================= */
+header {
+  background-color: var(--cor-primaria);
+  color: var(--cor-clara);
+  padding: var(--esp-2);
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: var(--esp-2);
+}
+
+nav a {
+  color: var(--cor-clara);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   FORMULÁRIOS
+================================= */
+input, select, textarea, button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: var(--esp-1) 0 var(--esp-2);
+  padding: var(--esp-1);
+  border-radius: 6px;
+  border: 1px solid #99cc99;
+}
+
+button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-clara);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--cor-primaria);
+}
+
+/* ================================
+   RODAPÉ
+================================= */
+footer {
+  text-align: center;
+  padding: var(--esp-2);
+  background-color: var(--cor-escura);
+  color: var(--cor-clara);
+}
+/* ====== SUBMENU DROPDOWN ====== */
+.nav-list li {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--cor-branca);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.dropdown li {
+    width: 180px;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 16px;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+}
+
+/* Exibir o submenu ao passar o mouse */
+.submenu:hover .dropdown {
+    display: block;
+}
+/* ==========================
+   PADRÃO PARA TODAS AS IMAGENS
+========================== */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
